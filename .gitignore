@@ -1,0 +1,11 @@
+# 构建产物
+bin/
+obj/
+publish/
+
+# 用户本地配置
+*.user
+
+# IDE
+.vs/
+.idea/
