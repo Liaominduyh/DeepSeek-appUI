@@ -38,12 +38,17 @@ Harness 官方只有 CLI。日常用就得自己 `npx -y @deepseek-ai/dsh web`�
 
 ```bash
 npm install -g dsh-appui
-dsh-appui
+dsh-appui            # 部署应用 + 创建桌面快捷方式
+dsh-appui --run      # 部署后立即启动
 ```
 
-`dsh-appui` 把应用部署到 `~/.dsh/deepseek-appUI/` 并在桌面创建快捷方式「DeepSeek Harness」。npm 12 默认阻止依赖的安装脚本，所以装完需要手动跑一次这个命令（或者安装时加 `--allow-scripts=dsh-appui` 跳过这一步）；之后点快捷方式启动即可。
+`dsh-appui` 把应用部署到 `~/.dsh/deepseek-appUI/` 并在桌面创建快捷方式「DeepSeek Harness」。npm 12 默认阻止依赖的安装脚本，所以装完需要手动跑一次（或者安装时加 `--allow-scripts=dsh-appui` 跳过这一步）；之后点快捷方式启动即可。
+
+不用快捷方式的话，直接运行 `~/.dsh/deepseek-appUI/DeepSeekHarness.exe`。
 
 卸载：`npm uninstall -g dsh-appui`，再手动删掉 `~/.dsh/deepseek-appUI` 和桌面快捷方式。
+
+强制重新安装服务（比如想更新到最新版）：删掉 `~/.dsh/dsh-installed.json` 再启动。
 
 ## 构建
 
