@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Content Include="Resources\splash.html" Link="splash.html" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Resources\deepseek.ico" Link="deepseek.ico" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

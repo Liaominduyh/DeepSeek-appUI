@@ -1,0 +1,15 @@
+{
+  "name": "dsh-appui",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 桌面壳子（Windows）：C# WinForms + WebView2 桌面应用，安装后自动部署到 ~/.dsh 并创建桌面快捷方式",
+  "keywords": ["deepseek", "harness", "dsh", "desktop", "webview2"],
+  "license": "MIT",
+  "os": ["win32"],
+  "files": ["app", "deploy.js", "install.js", "README.md"],
+  "bin": {
+    "dsh-appui": "deploy.js"
+  },
+  "scripts": {
+    "postinstall": "node install.js"
+  }
+}

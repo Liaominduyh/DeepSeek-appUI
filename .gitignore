@@ -2,6 +2,8 @@
 bin/
 obj/
 publish/
+packaging/app/
+packaging/*.tgz
 
 # 用户本地配置
 *.user
